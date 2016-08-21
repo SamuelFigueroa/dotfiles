@@ -1,9 +1,9 @@
+set nocompatible
+
 execute pathogen#infect()
 syntax on
 execute pathogen#helptags()
 filetype plugin indent on
-
-set nocompatible
 
 set number
 set encoding=utf-8
