@@ -51,6 +51,11 @@ if [ -d "$EXTRA_DIR" ]; then
   done
 fi
 
+if [ -z "$SSH_AUTH_SOCK" ] ; then
+	eval `ssh-agent -s`
+	ssh-add -K "$HOME/.ssh/github_rsa"
+fi
+
 # Clean up
 
 unset READLINK CURRENT_SCRIPT SCRIPT_PATH DOTFILE
