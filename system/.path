@@ -5,6 +5,7 @@ is-executable getconf && PATH=$(command -v getconf PATH)
 
 # Prepend new items to path (if directory exists)
 
+prepend-path "$JAVA_HOME/bin"
 prepend-path "/bin"
 prepend-path "/usr/bin"
 prepend-path "/usr/local/bin"
@@ -15,12 +16,22 @@ prepend-path "/sbin"
 prepend-path "/usr/sbin"
 prepend-path "/usr/local/sbin"
 prepend-path "$HOME/.rvm/bin"
+prepend-path "$HOME/Qt/5.8/clang_64/bin"
+prepend-path "/usr/local/opt/icu4c/bin"
+prepend-path "/usr/local/opt/icu4c/sbin"
+prepend-path "$HOME/Projects/huckl/node_modules/.bin"
+prepend-path "/usr/local/share/dotnet"
 
 # Remove duplicates (preserving prepended items)
 # Source: http://unix.stackexchange.com/a/40755
 
 PATH=`echo -n $PATH | awk -v RS=: '{ if (!arr[$0]++) {printf("%s%s",!ln++?"":":",$0)}}'`
 
+RDBASE="$HOME/Projects/rdkit"
+OBBASE="$HOME/Projects/node-obabel/ob-build"
+
 # Wrap up
 
 export PATH
+export OBBASE
+export RDBASE

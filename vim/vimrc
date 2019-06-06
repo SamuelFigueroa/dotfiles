@@ -9,7 +9,11 @@ set number
 set encoding=utf-8
 set ruler
 set showcmd
+set shiftwidth=2
+set softtabstop=2
 set autoindent
+set smartindent
+set expandtab
 set showmode
 set wildmenu
 set wildmode=list:longest
@@ -37,6 +41,10 @@ let g:solarized_termcolors=16
 colorscheme solarized
 
 autocmd filetype lisp,scheme,art setlocal equalprg=scmindent.rkt
+
+"Enable Emmet for just html/css files
+let g:user_emmet_install_global = 0
+autocmd filetype html,css EmmetInstall
 
 "tslime
 let g:tslime_normal_mapping = '<leader>t'

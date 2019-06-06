@@ -3,5 +3,11 @@
 	clean = git media clean %f
 	smudge = git media smudge %f
 [user]
-	name = SamuelFigueroa
+	name = Samuel Figueroa-Lazu
 	email = sammylazu@gmail.com
+	username = SamuelFigueroa
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f

@@ -1,3 +1,5 @@
 # Shortcuts
 
 alias sicp="racket -i -p neil/sicp -l xrepl"
+alias mvnrascal="cd $HOME/rascal/rascal-shell;mvn exec:java"
+alias rascal="cd $HOME/rascal/rascal-shell;java -Xmx1G -Xss32m -jar rascal-shell-current.jar"

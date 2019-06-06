@@ -1,3 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/Users/Sammy/.vim'
+let g:netrw_dirhist_2='/Users/Sammy/asmwork/asmsbs3e/chapter5/eatsyscall'
+let g:netrw_dirhist_3='/Users/Sammy/asmwork/asmsbs3e/chapter5'
+let g:netrw_dirhist_4='/Users/Sammy/Qt/5.8/clang_64/mkspecs/macx-clang'
+let g:netrw_dirhist_5='/Users/Sammy/.dotfiles'
+let g:netrw_dirhist_6='/Users/Sammy/.dotfiles/vim/bundle/emmet-vim/autoload/emmet'
+let g:netrw_dirhist_7='/Users/Sammy/zxing-cpp-master/build/CMakeFiles'
+let g:netrw_dirhist_8='/Users/Sammy/NodeJS'
+let g:netrw_dirhist_9='/Users/Sammy/.dotfiles/system'
